@@ -3,17 +3,31 @@
 #include "ov5642_regs.h"
 #include "ov5640_regs.h"
 
+extern I2C_HandleTypeDef hi2c1;  // Déclare l'instance de I2C utilisée dans main.c
+extern SPI_HandleTypeDef hspi1;  // Handle pour l'interface SPI2
+
 byte sensor_model = 0;
-byte sensor_addr = 0;
+byte sensor_addr = 0x60;
 byte m_fmt = JPEG;
 uint32_t length = 0;
 uint8_t is_header= false ;
 
-extern I2C_HandleTypeDef hi2c1;  // Déclare l'instance de I2C utilisée dans main.c
+uint8_t vid, pid;
 
 
 void ArduCAM_Init(byte model) 
 {
+	wrSensorReg8_8(0xff, 0x01);
+	rdSensorReg8_8(OV2640_CHIPID_HIGH, &vid);
+	rdSensorReg8_8(OV2640_CHIPID_LOW, &pid);
+    if ((vid != 0x26 ) && (( pid != 0x41 ) || ( pid != 0x42 ))){
+      //Serial.println(F("ACK CMD Can't find OV2640 module! END"));
+    	HAL_Delay(10000);
+    }
+    else{
+      //Serial.println(F("ACK CMD OV2640 detected. END"));break;
+    }
+
 	switch (model)
   {
     case OV2640:
@@ -94,34 +108,15 @@ void ArduCAM_Init(byte model)
      break;
   }
 }
-////CS init
-//void ArduCAM_CS_init(void)
-//{
-//  GPIO_InitTypeDef GPIO_InitStructure;
-//  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
-//  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-//  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-//  GPIO_InitStructure.GPIO_Pin =  CS_PIN;
-//	GPIO_Init(CS_PORT, &GPIO_InitStructure);
-//	CS_HIGH();
-//}
 
-////Ö¸Ê¾µÆ³õÊ¼»¯
-//void ArduCAM_LED_init(void)
-//{
-//  GPIO_InitTypeDef GPIO_InitStructure;
-//  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOE, ENABLE);
-//  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-//  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-//  GPIO_InitStructure.GPIO_Pin =  LED_PIN;
-//	GPIO_Init(LED_PORT, &GPIO_InitStructure);
-////***********************************************
-//	//   debug pin
-//  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_2;
-//	GPIO_Init(GPIOE, &GPIO_InitStructure);
-//	GPIO_SetBits(GPIOE,GPIO_Pin_2);
-////************************************************/
-//}
+void SingleCapTransfer(void)
+{
+	flush_fifo();
+	clear_fifo_flag();
+	start_capture();
+	while(!get_bit(ARDUCHIP_TRIG , CAP_DONE_MASK)){;}
+	length= read_fifo_length();
+}
 
 
 void set_format(byte fmt)
@@ -132,26 +127,63 @@ void set_format(byte fmt)
     m_fmt = JPEG;
 }
 
-uint8_t bus_read(int address)
+
+uint8_t bus_read(uint8_t address)
 {
-	uint8_t value;
-	CS_LOW();
-	SPI2_ReadWriteByte(address);
-	value = SPI2_ReadWriteByte(0x00);
-	CS_HIGH();
-	return value;
+    uint8_t txData = address;
+    uint8_t rxData = 0x00;
+
+    // Abaisse le signal CS (chip select)
+    HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
+
+    // Envoi de l'adresse via SPI
+    if (HAL_SPI_Transmit(&hspi1, &txData, 1, HAL_MAX_DELAY) != HAL_OK)
+    {
+        HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET); // Libère le CS en cas d'erreur
+        return 0xFF;  // Erreur de transmission
+    }
+
+    //HAL_Delay(1);
+
+    // Lecture de la donnée via SPI
+    if (HAL_SPI_Receive(&hspi1, &rxData, 1, HAL_MAX_DELAY) != HAL_OK)
+    {
+        HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET); // Libère le CS en cas d'erreur
+        return 0xFF;  // Erreur de réception
+    }
+
+    //HAL_Delay(1);
+
+    // Libère le signal CS
+    HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
+
+    return rxData;
 }
 
-uint8_t bus_write(int address,int value)
-{	
-	CS_LOW();
-	delay_us(10);
-	SPI2_ReadWriteByte(address);
-	SPI2_ReadWriteByte(value);
-	delay_us(10);
-	CS_HIGH();
-	return 1;
+
+uint8_t bus_write(uint8_t address, uint8_t value)
+{
+    // Abaisse le signal CS (chip select)
+    HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
+
+    // Attente de 10 millisecondes
+    HAL_Delay(10);
+
+    // Envoi de l'adresse via SPI
+    HAL_SPI_Transmit(&hspi1, &address, 1, HAL_MAX_DELAY);
+
+    // Envoi de la valeur via SPI
+    HAL_SPI_Transmit(&hspi1, &value, 1, HAL_MAX_DELAY);
+
+    // Attente de 10 millisecondes
+    HAL_Delay(10);
+
+    // Libère le signal CS
+    HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
+
+    return 1;  // Indique que l'opération s'est bien déroulée
 }
+
 
 uint8_t read_reg(uint8_t addr)
 {
@@ -172,6 +204,7 @@ uint8_t read_fifo(void)
 	data = bus_read(SINGLE_FIFO_READ);
 	return data;
 }
+
 void set_fifo_burst()
 {
 	SPI2_ReadWriteByte(BURST_FIFO_READ);
@@ -197,9 +230,9 @@ uint32_t read_fifo_length(void)
 {
 	uint32_t len1,len2,len3,len=0;
 	len1 = read_reg(FIFO_SIZE1);
-  len2 = read_reg(FIFO_SIZE2);
-  len3 = read_reg(FIFO_SIZE3) & 0x7f;
-  len = ((len3 << 16) | (len2 << 8) | len1) & 0x07fffff;
+	len2 = read_reg(FIFO_SIZE2);
+	len3 = read_reg(FIFO_SIZE3) & 0x7f;
+	len = ((len3 << 16) | (len2 << 8) | len1) & 0x07fffff;
 	return len;	
 }
 
@@ -362,14 +395,14 @@ byte wrSensorReg8_8(uint8_t regID, uint8_t* regDat) {
     HAL_Delay(5);  // Temporisation en millisecondes pour laisser le temps au capteur
 
     // Démarre la transmission en envoyant l'adresse du capteur avec HAL I2C
-    if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr << 1, &regID, 1, HAL_MAX_DELAY) != HAL_OK) {
+    if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &regID, 1, HAL_MAX_DELAY) != HAL_OK) {
         return 1;  // Échec d'écriture de l'adresse du capteur
     }
 
     HAL_Delay(5);  // Temporisation en microsecondes
 
     // Envoie la valeur du registre au capteur
-    if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr << 1, &regDat, 1, HAL_MAX_DELAY) != HAL_OK) {
+    if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &regDat, 1, HAL_MAX_DELAY) != HAL_OK) {
         return 2;  // Échec d'écriture de la valeur dans le registre
     }
 
@@ -469,7 +502,7 @@ int wrSensorRegs16_8(const struct sensor_reg reglist[])
     reg_addr =next->reg;
     reg_val = next->val;
     err = wrSensorReg16_8(reg_addr, reg_val);
-    delay_us(600);
+    HAL_Delay(600);
     next++;
   }
   return err;
