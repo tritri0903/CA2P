@@ -28,95 +28,74 @@ void ArduCAM_Init(byte model)
       //Serial.println(F("ACK CMD OV2640 detected. END"));break;
     }
 
-	switch (model)
-  {
-    case OV2640:
-    case OV9650:
-    case OV9655:
-	{		
-		wrSensorReg8_8(0xff, 0x01);
-		wrSensorReg8_8(0x12, 0x80);
-		if(m_fmt == JPEG)
-		{
-			wrSensorRegs8_8(OV2640_JPEG_INIT);
-			wrSensorRegs8_8(OV2640_YUV422);
-			wrSensorRegs8_8(OV2640_JPEG);
-			wrSensorReg8_8(0xff, 0x01);
-			wrSensorReg8_8(0x15, 0x00);
-			wrSensorRegs8_8(OV2640_320x240_JPEG);
-		}
-		else
-		{
-			wrSensorRegs8_8(OV2640_QVGA);
-		}
-		break;
+    wrSensorReg8_8(0xff, 0x01);
+	wrSensorReg8_8(0x12, 0x80);
+	HAL_Delay(100);
+	if (m_fmt == JPEG)
+	{
+	  wrSensorRegs8_8(OV2640_JPEG_INIT);
+	  wrSensorRegs8_8(OV2640_YUV422);
+	  wrSensorRegs8_8(OV2640_JPEG);
+	  wrSensorReg8_8(0xff, 0x01);
+	  wrSensorReg8_8(0x15, 0x00);
+	  wrSensorRegs8_8(OV2640_320x240_JPEG);
+	  //wrSensorReg8_8(0xff, 0x00);
+	  //wrSensorReg8_8(0x44, 0x32);
 	}
-		case OV5640:
-		{
-			if (m_fmt == JPEG)
-			{
-				wrSensorReg16_8(0x3103, 0x11);
-				wrSensorReg16_8(0x3008, 0x82);
-				wrSensorRegs16_8(OV5640YUV_Sensor_Dvp_Init);	
-				wrSensorRegs16_8(OV5640_JPEG_QSXGA);
-				wrSensorRegs16_8(OV5640_QSXGA2QVGA);
-			  wrSensorReg16_8(0x4407, 0x04);
+	else
+	{
+	  wrSensorRegs8_8(OV2640_QVGA);
+	}
+ }
 
-			}
-			else
-			{
-				wrSensorReg16_8(0x3103, 0x11);
-				wrSensorReg16_8(0x3008, 0x82);
-				wrSensorRegs16_8(OV5640YUV_Sensor_Dvp_Init);
-				wrSensorRegs16_8(OV5640_RGB_QVGA);
-			} 
-			write_reg(ARDUCHIP_TIM, VSYNC_LEVEL_MASK);   //VSYNC is active HIGH
-			 break;
-		}
-		case OV5642:
-      {
-        wrSensorReg16_8(0x3008, 0x80);
-        wrSensorRegs16_8(OV5642_QVGA_Preview);
-      
-        if (m_fmt == JPEG)
-        {
-          wrSensorRegs16_8(OV5642_JPEG_Capture_QSXGA);
-          wrSensorRegs16_8(ov5642_320x240);
-          wrSensorReg16_8(0x3818, 0xa8);
-          wrSensorReg16_8(0x3621, 0x10);
-          wrSensorReg16_8(0x3801, 0xb0);
-          wrSensorReg16_8(0x4407, 0x04);
-        }
-        else
-        {
-        	byte reg_val;
-          wrSensorReg16_8(0x4740, 0x21);
-          wrSensorReg16_8(0x501e, 0x2a);
-          wrSensorReg16_8(0x5002, 0xf8);
-          wrSensorReg16_8(0x501f, 0x01);
-          wrSensorReg16_8(0x4300, 0x61);
-          rdSensorReg16_8(0x3818, &reg_val);
-          wrSensorReg16_8(0x3818, (reg_val | 0x60) & 0xff);
-          rdSensorReg16_8(0x3621, &reg_val);
-          wrSensorReg16_8(0x3621, reg_val & 0xdf);
-        }
-				write_reg(ARDUCHIP_TIM, VSYNC_LEVEL_MASK);   //VSYNC is active HIGH					
-				
-			  break;
-      }
-     default:
-     break;
-  }
-}
 
 void SingleCapTransfer(void)
 {
+	write_reg(0x07, 0x80);
+	HAL_Delay(100);
+	write_reg(0x07, 0x00);
+	HAL_Delay(100);
+	//read_reg(0x00);
+	set_format(JPEG);
+	ArduCAM_Init(OV2640);
+//	write_reg(0x07, 0b10000000);
+//	//flush_fifo();
+
+//	write_reg(0x07, 0x00);
+//	write_reg(0x00, 0x55);
+//	read_reg(0x00);
+	//wrSensorRegs8_8(OV2640_JPEG_INIT);
+	//wrSensorRegs8_8(OV2640_320x240_JPEG);
+	HAL_Delay(1000);
+	clear_fifo_flag();
+//	read_reg(0x01);
+	HAL_Delay(1000);
+
+	flush_fifo();
+	HAL_Delay(1000);
 	flush_fifo();
 	clear_fifo_flag();
 	start_capture();
-	while(!get_bit(ARDUCHIP_TRIG , CAP_DONE_MASK)){;}
+	while(!get_bit(ARDUCHIP_TRIG , CAP_DONE_MASK)){
+		//HAL_Delay(10);
+	}
 	length= read_fifo_length();
 }
+
+void DMA1_RX_HAL(SPI_HandleTypeDef *hspi, uint8_t *pData, uint32_t len)
+{
+    // 1. Mettre le CS à LOW pour commencer la communication
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET); // Exemple avec GPIOB et PIN 12
+
+    // 2. Configuration du SPI en mode réception DMA
+    // HAL_SPI_TransmitReceive_DMA permet de gérer à la fois la transmission et la réception via DMA
+    if (HAL_SPI_Receive_DMA(hspi, pData, len) != HAL_OK)
+    {
+        // Gérer les erreurs si nécessaire
+        Error_Handler();
+    }
+}
+
 
 
 void set_format(byte fmt)
@@ -125,6 +104,10 @@ void set_format(byte fmt)
     m_fmt = BMP;
   else
     m_fmt = JPEG;
+}
+
+void set_frame(byte nbr){
+	write_reg(ARDUCHIP_FRAMES, nbr-1);
 }
 
 
@@ -137,20 +120,12 @@ uint8_t bus_read(uint8_t address)
     HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
 
     // Envoi de l'adresse via SPI
-    if (HAL_SPI_Transmit(&hspi1, &txData, 1, HAL_MAX_DELAY) != HAL_OK)
-    {
-        HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET); // Libère le CS en cas d'erreur
-        return 0xFF;  // Erreur de transmission
-    }
+    HAL_SPI_Transmit(&hspi1, &txData, 1, HAL_MAX_DELAY);
 
     //HAL_Delay(1);
 
     // Lecture de la donnée via SPI
-    if (HAL_SPI_Receive(&hspi1, &rxData, 1, HAL_MAX_DELAY) != HAL_OK)
-    {
-        HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET); // Libère le CS en cas d'erreur
-        return 0xFF;  // Erreur de réception
-    }
+    HAL_SPI_Receive(&hspi1, &rxData, 1, HAL_MAX_DELAY);
 
     //HAL_Delay(1);
 
@@ -167,7 +142,7 @@ uint8_t bus_write(uint8_t address, uint8_t value)
     HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
 
     // Attente de 10 millisecondes
-    HAL_Delay(10);
+    //HAL_Delay(1);
 
     // Envoi de l'adresse via SPI
     HAL_SPI_Transmit(&hspi1, &address, 1, HAL_MAX_DELAY);
@@ -176,7 +151,7 @@ uint8_t bus_write(uint8_t address, uint8_t value)
     HAL_SPI_Transmit(&hspi1, &value, 1, HAL_MAX_DELAY);
 
     // Attente de 10 millisecondes
-    HAL_Delay(10);
+    //HAL_Delay(1);
 
     // Libère le signal CS
     HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
@@ -209,7 +184,6 @@ void set_fifo_burst()
 {
 	SPI2_ReadWriteByte(BURST_FIFO_READ);
 }
-
 
 void flush_fifo(void)
 {
@@ -399,7 +373,7 @@ byte wrSensorReg8_8(uint8_t regID, uint8_t* regDat) {
         return 1;  // Échec d'écriture de l'adresse du capteur
     }
 
-    HAL_Delay(5);  // Temporisation en microsecondes
+    HAL_Delay(1);  // Temporisation en microsecondes
 
     // Envoie la valeur du registre au capteur
     if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &regDat, 1, HAL_MAX_DELAY) != HAL_OK) {
@@ -422,18 +396,10 @@ byte rdSensorReg8_8(uint8_t regID, uint8_t* regDat)
 
     HAL_Delay(10);  // Délai pour la synchronisation du bus
 
-    // Vérification de l'écriture de l'ID du registre
-    if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &regID, 1, HAL_MAX_DELAY) != HAL_OK)
-    {
-        return 2;  // Erreur lors de l'écriture de l'ID du registre
-    }
-
-    HAL_Delay(10);  // Délai pour la synchronisation du bus
-
     // Relance de l'I2C avec l'adresse du capteur en mode lecture
     if (HAL_I2C_Master_Receive(&hi2c1, sensor_addr | 0x01, regDat, 1, HAL_MAX_DELAY) != HAL_OK)
     {
-        return 3;  // Erreur lors de la lecture
+        return 2;  // Erreur lors de la lecture
     }
 
     HAL_Delay(10);  // Délai pour s'assurer de la bonne fin de la transaction
@@ -520,7 +486,7 @@ byte rdSensorReg16_8(uint16_t regID, uint8_t* regDat)
     data[1] = (uint8_t)(regID & 0xFF); // Partie basse de l'adresse
 
     // Envoi de l'adresse du registre
-    status = HAL_I2C_Master_Transmit(&hi2c1, sensor_addr << 1, data, 2, 1000);
+    status = HAL_I2C_Master_Transmit(&hi2c1, sensor_addr + 1, data, 2, 1000);
     if (status != HAL_OK)
     {
         // Si l'envoi échoue, retour 0
@@ -530,7 +496,7 @@ byte rdSensorReg16_8(uint16_t regID, uint8_t* regDat)
     HAL_Delay(20);  // Délai après la transmission
 
     // Lecture de la donnée à partir du registre
-    status = HAL_I2C_Master_Receive(&hi2c1, (sensor_addr << 1) | 0x01, regDat, 1, 1000);
+    status = HAL_I2C_Master_Receive(&hi2c1, (sensor_addr + 1) | 0x01, regDat, 1, 1000);
     if (status != HAL_OK)
     {
         // Si la lecture échoue, retour 0
