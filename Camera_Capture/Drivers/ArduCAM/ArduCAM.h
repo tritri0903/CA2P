@@ -203,7 +203,7 @@ uint8_t read_fifo_burst(void);
 
 
 
-byte wrSensorReg8_8(uint8_t regID, uint8_t* regDat);
+byte wrSensorReg8_8(uint8_t regID, uint8_t regDat);
 int  wrSensorRegs8_8(const struct sensor_reg*);
 byte rdSensorReg8_8(uint8_t regID, uint8_t* regDat);
 

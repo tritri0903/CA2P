@@ -22,7 +22,7 @@ void ArduCAM_Init(byte model)
 	rdSensorReg8_8(OV2640_CHIPID_LOW, &pid);
     if ((vid != 0x26 ) && (( pid != 0x41 ) || ( pid != 0x42 ))){
       //Serial.println(F("ACK CMD Can't find OV2640 module! END"));
-    	HAL_Delay(10000);
+    	HAL_Delay(1000);
     }
     else{
       //Serial.println(F("ACK CMD OV2640 detected. END"));break;
@@ -365,20 +365,17 @@ void OV5642_set_JPEG_size(uint8_t size)
 }
 
 
-byte wrSensorReg8_8(uint8_t regID, uint8_t* regDat) {
-    HAL_Delay(5);  // Temporisation en millisecondes pour laisser le temps au capteur
+byte wrSensorReg8_8(uint8_t regID, uint8_t regDat) {
+    HAL_Delay(1);  // Temporisation en millisecondes pour laisser le temps au capteur
+    uint8_t data[2] = {regID, regDat};
+    //data[0] = regID; // Première valeur de 8 bits
+    //data[1] = regDat; // Deuxième valeur de 8 bits
 
     // Démarre la transmission en envoyant l'adresse du capteur avec HAL I2C
-    if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &regID, 1, HAL_MAX_DELAY) != HAL_OK) {
-        return 1;  // Échec d'écriture de l'adresse du capteur
-    }
-
-    HAL_Delay(1);  // Temporisation en microsecondes
+    HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &data, 2, 1000);
 
     // Envoie la valeur du registre au capteur
-    if (HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &regDat, 1, HAL_MAX_DELAY) != HAL_OK) {
-        return 2;  // Échec d'écriture de la valeur dans le registre
-    }
+    //HAL_I2C_Master_Transmit(&hi2c1, sensor_addr, &regDat, 1, HAL_MAX_DELAY);
 
     return 0;  // Succès
 }
@@ -394,7 +391,7 @@ byte rdSensorReg8_8(uint8_t regID, uint8_t* regDat)
         return 1;  // Erreur lors de l'écriture de l'adresse
     }
 
-    HAL_Delay(10);  // Délai pour la synchronisation du bus
+    HAL_Delay(1);  // Délai pour la synchronisation du bus
 
     // Relance de l'I2C avec l'adresse du capteur en mode lecture
     if (HAL_I2C_Master_Receive(&hi2c1, sensor_addr | 0x01, regDat, 1, HAL_MAX_DELAY) != HAL_OK)
@@ -402,7 +399,7 @@ byte rdSensorReg8_8(uint8_t regID, uint8_t* regDat)
         return 2;  // Erreur lors de la lecture
     }
 
-    HAL_Delay(10);  // Délai pour s'assurer de la bonne fin de la transaction
+    HAL_Delay(1);  // Délai pour s'assurer de la bonne fin de la transaction
 
     return 0;  // Lecture réussie
 }

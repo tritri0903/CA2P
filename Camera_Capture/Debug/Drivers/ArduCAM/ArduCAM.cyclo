@@ -20,9 +20,9 @@
 ../Drivers/ArduCAM/ArduCAM.c:261:6:OV2640_set_JPEG_size	10
 ../Drivers/ArduCAM/ArduCAM.c:298:6:OV5640_set_JPEG_size	10
 ../Drivers/ArduCAM/ArduCAM.c:336:6:OV5642_set_JPEG_size	8
-../Drivers/ArduCAM/ArduCAM.c:368:6:wrSensorReg8_8	3
-../Drivers/ArduCAM/ArduCAM.c:387:6:rdSensorReg8_8	3
-../Drivers/ArduCAM/ArduCAM.c:411:5:wrSensorRegs8_8	4
-../Drivers/ArduCAM/ArduCAM.c:438:6:wrSensorReg16_8	2
-../Drivers/ArduCAM/ArduCAM.c:458:5:wrSensorRegs16_8	2
-../Drivers/ArduCAM/ArduCAM.c:479:6:rdSensorReg16_8	3
+../Drivers/ArduCAM/ArduCAM.c:368:6:wrSensorReg8_8	1
+../Drivers/ArduCAM/ArduCAM.c:384:6:rdSensorReg8_8	3
+../Drivers/ArduCAM/ArduCAM.c:408:5:wrSensorRegs8_8	4
+../Drivers/ArduCAM/ArduCAM.c:435:6:wrSensorReg16_8	2
+../Drivers/ArduCAM/ArduCAM.c:455:5:wrSensorRegs16_8	2
+../Drivers/ArduCAM/ArduCAM.c:476:6:rdSensorReg16_8	3
