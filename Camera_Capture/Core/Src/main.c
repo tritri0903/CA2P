@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "fatfs.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -43,21 +44,28 @@
 I2C_HandleTypeDef hi2c1;
 
 SPI_HandleTypeDef hspi1;
+DMA_HandleTypeDef hdma_spi1_rx;
+DMA_HandleTypeDef hdma_spi1_tx;
 
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+
+uint8_t TxBuffer[256];
+
+uint8_t DMA_Complet;
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
-
+static uint8_t SD_Card_Test(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -93,25 +101,35 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USART2_UART_Init();
   MX_SPI1_Init();
   MX_I2C1_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
 
   //ArduCAM_Init(OV2640);
-
+  uint8_t debug[] = "Hello Serial\r\n";
+  HAL_UART_Transmit(&huart2, debug, sizeof(debug)-1, HAL_MAX_DELAY);
   uint8_t rxBuffer[4096];
+
+  DMA_Complet = 0;
+
+  while(SD_Card_Test());
+  ArduCAM_Init(OV2640);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ArduCAM_Init(OV2640);
-	  SingleCapTransfer();
-	  while(1);
-	  DMA1_RX_HAL(&hspi1, rxBuffer, sizeof(rxBuffer));
+	  if(HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET){
+		  SingleCapTransfer();
+		  memset(TxBuffer, 0, sizeof(TxBuffer));
+		  sprintf(TxBuffer, "Capture Done! \r\n");
+		  HAL_UART_Transmit(&huart2, TxBuffer, sizeof(TxBuffer), 100);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -149,7 +167,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV4;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
@@ -182,7 +200,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.Timing = 0x00303D5B;
+  hi2c1.Init.Timing = 0x00000509;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
@@ -237,7 +255,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -288,6 +306,22 @@ static void MX_USART2_UART_Init(void)
 }
 
 /**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel2_3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel2_3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel2_3_IRQn);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -308,7 +342,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, SPI_CS_Pin|SD_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -323,19 +357,76 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : SPI_CS_Pin */
-  GPIO_InitStruct.Pin = SPI_CS_Pin;
+  /*Configure GPIO pins : SPI_CS_Pin SD_CS_Pin */
+  GPIO_InitStruct.Pin = SPI_CS_Pin|SD_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(SPI_CS_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
+static uint8_t SD_Card_Test(void)
+{
+	FATFS FatFs;
+	FIL Fil;
+	FRESULT FR_Status;
+	FATFS *FS_Ptr;
+	UINT RWC, WWC; // Read/Write Word Counter
+	DWORD FreeClusters;
+	uint32_t TotalSize, FreeSpace;
+	char RW_Buffer[200];
+	//------------------[ Mount The SD Card ]--------------------
+	FR_Status = f_mount(&FatFs, "", 1);
+	memset(TxBuffer, 0, sizeof(TxBuffer));
+	if (FR_Status != FR_OK){
+		//------------------[ Unmount The SD Card ]--------------------
+		FR_Status = f_mount(NULL, "", 0);
+		if (FR_Status != FR_OK)
+		{
+		  sprintf(TxBuffer, "Error! While Un-mounting SD Card, Error Code: (%i)\r\n", FR_Status);
+		  HAL_UART_Transmit(&huart2, TxBuffer, sizeof(TxBuffer), HAL_MAX_DELAY);
+		} else{
+		  sprintf(TxBuffer, "SD Card Un-mounted Successfully! \r\n");
+		  HAL_UART_Transmit(&huart2, TxBuffer, sizeof(TxBuffer), HAL_MAX_DELAY);
+		}
+		return 1;
+	}
+	else{
+		sprintf(TxBuffer, "SD Card Mounted Successfully! \r\n");
+		HAL_UART_Transmit(&huart2, TxBuffer, sizeof(TxBuffer), HAL_MAX_DELAY);
+	}
+	//------------------[ Open A Text File For Write & Write Data ]--------------------
+	//Open the file
+	FR_Status = f_open(&Fil, "im1.jpg", FA_CREATE_ALWAYS | FA_WRITE);
+	if(FR_Status != FR_OK)
+	{
+	  sprintf(TxBuffer, "Error! While Creating/Opening A New Text File, Error Code: (%i)\r\n", FR_Status);
+	  HAL_UART_Transmit(&huart2, TxBuffer, sizeof(TxBuffer), HAL_MAX_DELAY);
+	  return 1;
+	}
+	// (2) Write Data To The Text File [ Using f_write() Function ]
+	strcpy(RW_Buffer, "Hello! From STM32 To SD Card Over SPI, Using f_write()\r\n");
+	f_write(&Fil, RW_Buffer, strlen(RW_Buffer), &WWC);
+	// Close The File
+	f_close(&Fil);
+	f_mount(NULL, "", 0);
+	return 0;
+}
 
+void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef * hspi)
+{
+	HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET); // Exemple avec GPIOB et PIN 12
+	DMA_Complet = 1;
+}
+
+void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef * hspi)
+{
+
+}
 /* USER CODE END 4 */
 
 /**

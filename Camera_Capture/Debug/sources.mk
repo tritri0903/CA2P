@@ -42,4 +42,8 @@ Core/Src \
 Core/Startup \
 Drivers/ArduCAM \
 Drivers/STM32L0xx_HAL_Driver/Src \
+FATFS/App \
+FATFS/Target \
+Middlewares/Third_Party/FatFs/src \
+Middlewares/Third_Party/FatFs/src/option \
 

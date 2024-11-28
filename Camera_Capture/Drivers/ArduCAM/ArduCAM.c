@@ -4,7 +4,10 @@
 #include "ov5640_regs.h"
 
 extern I2C_HandleTypeDef hi2c1;  // Déclare l'instance de I2C utilisée dans main.c
-extern SPI_HandleTypeDef hspi1;  // Handle pour l'interface SPI2
+extern SPI_HandleTypeDef hspi1;  // Handle pour l'interface SPI1
+extern UART_HandleTypeDef huart2;
+
+extern uint8_t DMA_Complet;
 
 byte sensor_model = 0;
 byte sensor_addr = 0x60;
@@ -17,6 +20,13 @@ uint8_t vid, pid;
 
 void ArduCAM_Init(byte model) 
 {
+	write_reg(0x07, 0x80);
+	HAL_Delay(100);
+	write_reg(0x07, 0x00);
+	HAL_Delay(100);
+
+	set_format(JPEG);
+
 	wrSensorReg8_8(0xff, 0x01);
 	rdSensorReg8_8(OV2640_CHIPID_HIGH, &vid);
 	rdSensorReg8_8(OV2640_CHIPID_LOW, &pid);
@@ -51,41 +61,63 @@ void ArduCAM_Init(byte model)
 
 void SingleCapTransfer(void)
 {
-	write_reg(0x07, 0x80);
-	HAL_Delay(100);
-	write_reg(0x07, 0x00);
-	HAL_Delay(100);
-	//read_reg(0x00);
-	set_format(JPEG);
-	ArduCAM_Init(OV2640);
-//	write_reg(0x07, 0b10000000);
-//	//flush_fifo();
-
-//	write_reg(0x07, 0x00);
-//	write_reg(0x00, 0x55);
-//	read_reg(0x00);
-	//wrSensorRegs8_8(OV2640_JPEG_INIT);
-	//wrSensorRegs8_8(OV2640_320x240_JPEG);
-	HAL_Delay(1000);
-	clear_fifo_flag();
-//	read_reg(0x01);
-	HAL_Delay(1000);
+	uint8_t temp_last, temp[1024];
 
 	flush_fifo();
 	HAL_Delay(1000);
 	flush_fifo();
 	clear_fifo_flag();
 	start_capture();
-	while(!get_bit(ARDUCHIP_TRIG , CAP_DONE_MASK)){
+	while(!get_bit(ARDUCHIP_TRIG , CAP_DONE_MASK));
+
+	length= (int)read_fifo_length();
+	//HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
+	//temp = HAL_SPI_Receive(&hspi1, &temp, 1, HAL_MAX_DELAY);
+    //uint8_t data[length];
+    length --;
+    while ( length > 0)
+    {
+		HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
+		set_fifo_burst();
+		//temp_last = temp;
+		DMA_Complet = 0;
+
+		length = length - 1024;
+		if (length > 1024){
+		  DMA1_RX_HAL(&hspi1, &temp, 1024);
+		}
+		else{
+		  DMA1_RX_HAL(&hspi1, &temp, 1024);
+		  length = 0;
+		  break;
+		}
+		while(!DMA_Complet){};
+		uint16_t len = 0;
+		while(len < 0x400){
+			temp_last = temp[len];
+			HAL_UART_Transmit(&huart2, &temp[len], 1, 10);
+			len++;
+		}
+//      if (is_header == true)
+//      {
+//    	  //data[length] = temp;
+//
+//      }
+//      else if ((temp == 0xD8) & (temp_last == 0xFF))
+//      {
+//        is_header = true;
+//        //HAL_UART_Transmit(&huart2, &temp, sizeof(temp), HAL_MAX_DELAY);
+//      }
+//      if ( (temp == 0xD9) && (temp_last == 0xFF) ){ //If find the end ,break while,
+//    	  break;}
 		//HAL_Delay(10);
-	}
-	length= read_fifo_length();
+    }
 }
 
 void DMA1_RX_HAL(SPI_HandleTypeDef *hspi, uint8_t *pData, uint32_t len)
 {
     // 1. Mettre le CS à LOW pour commencer la communication
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET); // Exemple avec GPIOB et PIN 12
+    HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET); // Exemple avec GPIOB et PIN 12
 
     // 2. Configuration du SPI en mode réception DMA
     // HAL_SPI_TransmitReceive_DMA permet de gérer à la fois la transmission et la réception via DMA
@@ -182,7 +214,8 @@ uint8_t read_fifo(void)
 
 void set_fifo_burst()
 {
-	SPI2_ReadWriteByte(BURST_FIFO_READ);
+	uint8_t value = 0x3C;
+	HAL_SPI_Transmit(&hspi1, &value, 1, HAL_MAX_DELAY);
 }
 
 void flush_fifo(void)
@@ -208,6 +241,10 @@ uint32_t read_fifo_length(void)
 	len3 = read_reg(FIFO_SIZE3) & 0x7f;
 	len = ((len3 << 16) | (len2 << 8) | len1) & 0x07fffff;
 	return len;	
+}
+
+void read_burst(){
+
 }
 
 //Set corresponding bit  
