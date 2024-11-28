@@ -1,0 +1,71 @@
+/*
+ * sd_card.c
+ *
+ *  Created on: Nov 28, 2024
+ *      Author: Tristan
+ */
+
+#include "sd_card.h"
+#include "fatfs.h"
+
+extern UART_HandleTypeDef huart2;
+
+FATFS FatFs;
+FIL Fil;
+FRESULT FR_Status;
+FATFS *FS_Ptr;
+UINT RWC, WWC; // Read/Write Word Counter
+DWORD FreeClusters;
+uint32_t TotalSize, FreeSpace;
+char RW_Buffer[1024];
+
+int SD_Card_Init(void) {
+	//------------------[ Mount The SD Card ]--------------------
+	FR_Status = f_mount(&FatFs, "", 1);
+	if (FR_Status != FR_OK) {
+		return 1;
+	} else {
+		SD_Card_Unmount();
+		return 0;
+	}
+}
+
+int SD_Card_Write_Log(void) {
+	//------------------[ Open A Text File For Write & Write Data ]--------------------
+	//Open the file
+	FR_Status = f_open(&Fil, "Log.txt", FA_WRITE | FA_OPEN_APPEND);
+	if (FR_Status != FR_OK) {
+		return FR_Status;
+	}
+	// (2) Write Data To The Text File [ Using f_write() Function ]
+	strcpy(RW_Buffer,
+			"STM32 Start.\r\n");
+	f_write(&Fil, RW_Buffer, strlen(RW_Buffer), &WWC);
+	// Close The File
+	f_close(&Fil);
+	return 0;
+}
+
+int SD_Card_Write(uint8_t *buf) {
+	FR_Status = f_open(&Fil, "image.jpg", FA_WRITE | FA_OPEN_APPEND);
+	if (FR_Status != FR_OK) {
+		return FR_Status;
+	}
+	// (2) Write Data To The Text File [ Using f_write() Function ]
+	strcpy(RW_Buffer, buf);
+	f_write(&Fil, RW_Buffer, strlen(RW_Buffer), &WWC);
+	// Close The File
+	f_close(&Fil);
+	return 0;
+}
+
+int SD_Card_Unmount(void) {
+	//------------------[ Unmount The SD Card ]--------------------
+	FR_Status = f_mount(NULL, "", 0);
+	if (FR_Status != FR_OK) {
+		return 1;
+	} else {
+		return 0;
+	}
+}
+

@@ -33,7 +33,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/user_diskio.h \
- ../Drivers/ArduCAM/ArduCAM.h
+ ../Drivers/ArduCAM/ArduCAM.h \
+ C:/Users/trist/Documents/Github/CA2P-STM32/Camera_Capture/Drivers/SD_CARD/sd_card.h
 ../Core/Inc/main.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
 ../Core/Inc/stm32l0xx_hal_conf.h:
@@ -73,3 +74,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/Third_Party/FatFs/src/ff.h:
 ../FATFS/Target/user_diskio.h:
 ../Drivers/ArduCAM/ArduCAM.h:
+C:/Users/trist/Documents/Github/CA2P-STM32/Camera_Capture/Drivers/SD_CARD/sd_card.h:

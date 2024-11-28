@@ -201,7 +201,7 @@ uint8_t bus_write(uint8_t address, uint8_t value);
 uint8_t bus_read(uint8_t address);
 uint8_t read_fifo_burst(void);
 
-
+uint32_t SingleCapTransfer(void);
 
 byte wrSensorReg8_8(uint8_t regID, uint8_t regDat);
 int  wrSensorRegs8_8(const struct sensor_reg*);

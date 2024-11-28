@@ -41,6 +41,7 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/ArduCAM \
+Drivers/SD_CARD \
 Drivers/STM32L0xx_HAL_Driver/Src \
 FATFS/App \
 FATFS/Target \
