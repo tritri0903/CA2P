@@ -25,38 +25,38 @@ int SD_Card_Init(void) {
 	if (FR_Status != FR_OK) {
 		return 1;
 	} else {
-		SD_Card_Unmount();
 		return 0;
 	}
 }
 
-int SD_Card_Write_Log(void) {
-	//------------------[ Open A Text File For Write & Write Data ]--------------------
-	//Open the file
-	FR_Status = f_open(&Fil, "Log.txt", FA_WRITE | FA_OPEN_APPEND);
-	if (FR_Status != FR_OK) {
-		return FR_Status;
-	}
-	// (2) Write Data To The Text File [ Using f_write() Function ]
-	strcpy(RW_Buffer,
-			"STM32 Start.\r\n");
-	f_write(&Fil, RW_Buffer, strlen(RW_Buffer), &WWC);
-	// Close The File
+int SD_Card_Write_Log(const char *msg) {
+	SD_Card_Open("Log.txt");
+	// (2) Write Data To The Text File
+	f_write(&Fil, msg, strlen(msg), &WWC);
+	return 0;
+}
+
+int SD_Card_Save_Temp(uint8_t* buf){
+	FR_Status = f_open(&Fil, "Temp.jpg", FA_WRITE | FA_CREATE_ALWAYS);
+	f_write(&Fil, buf, sizeof(buf), &WWC);
 	f_close(&Fil);
 	return 0;
 }
 
-int SD_Card_Write(uint8_t *buf) {
-	FR_Status = f_open(&Fil, "image.jpg", FA_WRITE | FA_OPEN_APPEND);
-	if (FR_Status != FR_OK) {
-		return FR_Status;
-	}
-	// (2) Write Data To The Text File [ Using f_write() Function ]
-	strcpy(RW_Buffer, buf);
-	f_write(&Fil, RW_Buffer, strlen(RW_Buffer), &WWC);
+int SD_Card_Open(const char *file){
+	FR_Status = f_open(&Fil, file, FA_WRITE | FA_OPEN_APPEND);
+	return FR_Status;
+}
+
+int SD_Card_Write(uint8_t* buf) {
+	// Write Data To The Text File
+	f_write(&Fil, buf, 512, &WWC);
+	return WWC;
+}
+
+void SD_Card_Close(void){
 	// Close The File
 	f_close(&Fil);
-	return 0;
 }
 
 int SD_Card_Unmount(void) {

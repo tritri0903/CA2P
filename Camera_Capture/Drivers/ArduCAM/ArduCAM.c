@@ -12,7 +12,6 @@ extern uint8_t DMA_Complet;
 byte sensor_model = 0;
 byte sensor_addr = 0x60;
 byte m_fmt = JPEG;
-uint8_t is_header = false;
 
 uint8_t vid, pid;
 
