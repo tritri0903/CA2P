@@ -53,6 +53,8 @@ void ArduCAM_Init(byte model) {
 uint32_t SingleCapTransfer(void) {
 	uint32_t length = 0;
 
+	set_frame(25);
+
 	flush_fifo();
 	HAL_Delay(1000);
 	flush_fifo();

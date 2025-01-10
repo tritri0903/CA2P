@@ -48,9 +48,9 @@ int SD_Card_Open(const char *file){
 	return FR_Status;
 }
 
-int SD_Card_Write(uint8_t* buf) {
+int SD_Card_Write(uint8_t* buf, uint16_t len) {
 	// Write Data To The Text File
-	f_write(&Fil, buf, 512, &WWC);
+	f_write(&Fil, buf, len, &WWC);
 	return WWC;
 }
 
