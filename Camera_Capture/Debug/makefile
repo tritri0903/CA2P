@@ -90,8 +90,8 @@ all: main-build
 main-build: Camera_Capture.elf secondary-outputs
 
 # Tool invocations
-Camera_Capture.elf Camera_Capture.map: $(OBJS) $(USER_OBJS) C:\Users\trist\Documents\Github\CA2P-STM32\Camera_Capture\STM32L053R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Camera_Capture.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\trist\Documents\Github\CA2P-STM32\Camera_Capture\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Camera_Capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Camera_Capture.elf Camera_Capture.map: $(OBJS) $(USER_OBJS) C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\STM32L053R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "Camera_Capture.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Camera_Capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

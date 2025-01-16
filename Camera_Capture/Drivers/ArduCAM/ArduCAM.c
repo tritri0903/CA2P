@@ -42,7 +42,7 @@ void ArduCAM_Init(byte model) {
 		wrSensorRegs8_8(OV2640_JPEG);
 		wrSensorReg8_8(0xff, 0x01);
 		wrSensorReg8_8(0x15, 0x00);
-		wrSensorRegs8_8(OV2640_320x240_JPEG);
+		wrSensorRegs8_8(OV2640_800x600_JPEG);
 		//wrSensorReg8_8(0xff, 0x00);
 		//wrSensorReg8_8(0x44, 0x32);
 	} else {
@@ -53,10 +53,10 @@ void ArduCAM_Init(byte model) {
 uint32_t SingleCapTransfer(void) {
 	uint32_t length = 0;
 
-	set_frame(25);
+	set_frame(1);
 
 	flush_fifo();
-	HAL_Delay(1000);
+	HAL_Delay(100);
 	flush_fifo();
 	clear_fifo_flag();
 	start_capture();
@@ -76,6 +76,14 @@ void set_format(byte fmt) {
 
 void set_frame(byte nbr) {
 	write_reg(ARDUCHIP_FRAMES, nbr - 1);
+}
+
+void set_power_down(){
+	write_reg(0x06, 0x02);
+}
+
+void set_power_up(){
+	write_reg(0x06, 0x01);
 }
 
 uint8_t bus_read(uint8_t address) {

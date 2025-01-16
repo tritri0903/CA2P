@@ -34,6 +34,18 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define BURST_SIZE 512
+#define BURST_SIZE_ADC 512
+
+#define AUDIO_REC_SEC 10
+
+#define VREF          3.3f       // Tension de référence de l'ADC
+#define ADC_RES       8          // Résolution de l'ADC en bits
+#define ADC_MAX_VAL   255        // Valeur max ADC 8 bits
+#define OFFSET_VOLT   1.25f      // Offset du micro en volts
+
+// Calcul de l'offset en valeur brute ADC
+#define OFFSET_ADC    ((uint8_t)((OFFSET_VOLT / VREF) * ADC_MAX_VAL))
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,6 +65,7 @@ DMA_HandleTypeDef hdma_spi1_rx;
 DMA_HandleTypeDef hdma_spi1_tx;
 
 TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim21;
 
 UART_HandleTypeDef huart2;
 
@@ -60,15 +73,18 @@ UART_HandleTypeDef huart2;
 
 uint8_t DMA_Complet;
 
-uint8_t SD_Status = 1;
-uint8_t is_header = false;
-
-uint8_t adc_buffer[BURST_SIZE]; // Tampon pour les données audio
-uint16_t adc_value[BURST_SIZE];
-uint8_t adc_flag = 0;
+uint8_t adc_buffer[BURST_SIZE_ADC];
+int8_t adc_buffer_offset[BURST_SIZE_ADC];
+uint8_t adc_flag = false;
 
 uint8_t audio_header_flag = false;
-uint8_t audio_foot_flag = false;
+uint8_t audio_done_flag = false;
+uint16_t audio_index = 0;
+
+uint8_t capture_trigger_flag = false;
+uint16_t capture_index = 0;
+
+uint8_t timer_interupt_flag = false;
 
 /* USER CODE END PV */
 
@@ -82,6 +98,7 @@ static void MX_I2C1_Init(void);
 static void MX_ADC_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_SPI2_Init(void);
+static void MX_TIM21_Init(void);
 /* USER CODE BEGIN PFP */
 void Debug_Print(const char *message);
 /* USER CODE END PFP */
@@ -91,30 +108,46 @@ void Debug_Print(const char *message);
 
 void Start_DMA(SPI_HandleTypeDef *hspi, uint8_t *pData, uint32_t len) {
 	// 1. Mettre le CS à LOW pour commencer la communication
-	HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET); // Exemple avec GPIOB et PIN 12
+	HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
 
 	// 2. Configuration du SPI en mode réception DMA
-	// HAL_SPI_TransmitReceive_DMA permet de gérer à la fois la transmission et la réception via DMA
 	if (HAL_SPI_Receive_DMA(hspi, pData, len) != HAL_OK) {
-		// Gérer les erreurs si nécessaire
 		Error_Handler();
 	}
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
-	HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 	adc_flag = 1;
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin == B1_Pin){
+		capture_trigger_flag = true;
+	}
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* tim){
+	if(tim == &htim21){
+		timer_interupt_flag = true;
+	}
 }
 
 void Capture_SD(uint32_t length) {
 	uint8_t temp_last;
 	uint8_t SD_Buffer[BURST_SIZE];
 	uint8_t DMA_Buffer[BURST_SIZE];
-	is_header = false;
+	uint8_t is_header = false;
+	char filename[25] = "Image";
+	sprintf(filename, "Image%u.jpg", capture_index);
 
-	while (SD_Card_Open("Temp.avi")) {
+
+	while (SD_Card_Open(filename)) {
 		HAL_Delay(100);
 	}
+
+	capture_index++;
 
 	while (length > 0) {
 		HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
@@ -154,21 +187,37 @@ void Capture_SD(uint32_t length) {
 	SD_Card_Close();
 }
 
-void Save_Audio(uint8_t len){
-	uint8_t header[44] = {0x52, 0x49, 0x46, 0x46, 0x00, 0x00, 0x00, 0x00, 0x57, 0x41, 0x56,
+/**
+ *  Corrige l'offset de 1.25V sur les données ADC 8 bits.
+ */
+void Corriger_Offset_ADC(uint8_t *input_data, int8_t *output_data, uint16_t length) {
+    for (uint16_t i = 0; i < length; i++) {
+        // Suppression de l'offset
+        int16_t valeur_corrigee = (int16_t)input_data[i] + 28;
+
+        // Saturation des valeurs entre -128 et 127 (format audio 8 bits signé)
+        if (valeur_corrigee > 255) {
+            valeur_corrigee = 255;
+        } else if (valeur_corrigee < 0) {
+            valeur_corrigee = 0;
+        }
+
+        output_data[i] = (int8_t)valeur_corrigee;
+    }
+}
+
+void Save_Audio(uint8_t len, uint16_t buf){
+	uint8_t header[44] = {0x52, 0x49, 0x46, 0x46, 0x00, 0xA8, 0x55, 0x20, 0x57, 0x41, 0x56,
 					   0x45, 0x66, 0x6d, 0x74, 0x20, 0x10, 0x00, 0x00, 0x00, 0x01, 0x00,
-					   0x01, 0x00, 0x80, 0x3e, 0x00, 0x00, 0x80, 0x3e, 0x00, 0x00, 0x01,
+					   0x01, 0x00, 0x10, 0x27, 0x00, 0x00, 0x10, 0x27, 0x00, 0x00, 0x01,
 					   0x00, 0x08, 0x00, 0x64, 0x61, 0x74, 0x61, 0x55, 0xd7, 0xff, 0xff};
 
 	if (!audio_header_flag){
 		SD_Card_Write(&header, 44);
 		audio_header_flag = true;
 	}
-	SD_Card_Write(&adc_buffer, BURST_SIZE);
-	if (audio_foot_flag){
-		header[4] = 0x01;
-		SD_Card_Write(&header, 44);
-	}
+	Corriger_Offset_ADC(&adc_buffer, &adc_buffer_offset, BURST_SIZE_ADC);
+	SD_Card_Write(&adc_buffer_offset, BURST_SIZE_ADC);
 }
 /* USER CODE END 0 */
 
@@ -208,16 +257,19 @@ int main(void)
   MX_ADC_Init();
   MX_TIM2_Init();
   MX_SPI2_Init();
+  MX_TIM21_Init();
   /* USER CODE BEGIN 2 */
 	HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
-	HAL_Delay(500);
+	HAL_Delay(100);
+
+	uint8_t SD_Status = 1;
 
 	while (1) {
 		SD_Status = SD_Card_Init();
 		if (!SD_Status) {
 			break;
 		}
-		Debug_Print("No SD Card");
+		Debug_Print("No SD Card\r\n");
 	}
 
 	Debug_Print("SD Card Mounted Successfully! \r\n");
@@ -225,16 +277,16 @@ int main(void)
 	ArduCAM_Init(OV2640);
 	Debug_Print("ArduCAM Ready! \r\n");
 
-	while(SD_Card_Open("Temp.wav")) {
+	while(SD_Card_Open("temp.wav")) {
 		HAL_Delay(100);
 	}
-	//SD_Card_Write_Log("Setup ready! \r\n");
-	//HAL_TIM_Base_Start_IT(&htim2);
-	HAL_ADC_Start_DMA(&hadc, &adc_buffer, BURST_SIZE);
+
+	char audio_filename[25] = "Audio";
+
+	HAL_ADC_Start_DMA(&hadc, &adc_buffer, BURST_SIZE_ADC);
 	HAL_TIM_Base_Start(&htim2);
 
 	uint32_t len;
-	uint16_t len_buffer_adc = 0;
 	uint16_t audio_size = 0;
 
   /* USER CODE END 2 */
@@ -242,27 +294,52 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
-		if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET) {
+		if (capture_trigger_flag == true) {
+			set_power_up();
+			ArduCAM_Init(OV2640);
+			Debug_Print("Capture Start! \r\n");
 			len = SingleCapTransfer();
 			Debug_Print("Capture Done! \r\n");
 			Capture_SD(len);
 			Debug_Print("Capture Save! \r\n");
+			set_power_down();
+			capture_trigger_flag = false;
 		}
-		if(adc_flag == 1){
-			adc_flag = 0;
-			//Debug_Print("ADC \r\n");
-			if(audio_size >= 300){
-				audio_foot_flag = true;
-				Save_Audio(audio_size);
+		if(adc_flag == true && audio_done_flag == false){
+			if(audio_size >= 20 * AUDIO_REC_SEC){
+				Save_Audio(audio_size, adc_buffer);
 				SD_Card_Close();
-				SD_Card_Unmount();
-				Debug_Print("ADC Buffer Full! \r\n");
-				while(1);
+				//SD_Card_Unmount();
+				Debug_Print("Record Finish! \r\n");
+				HAL_ADC_Stop_DMA(&hadc);
+				audio_size = 0;
+				audio_done_flag = true;
 			}else{
-				Save_Audio(audio_size);
+				Save_Audio(audio_size, adc_buffer);
 				audio_size++;
 			}
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+			adc_flag = 0;
 		}
+		if(audio_done_flag){
+			HAL_TIM_Base_Start_IT(&htim21);
+			timer_interupt_flag = false;
+			Debug_Print("Going to sleep... \r\n");
+			HAL_SuspendTick();
+			HAL_PWR_EnterSLEEPMode(PWR_LOWPOWERREGULATOR_ON, PWR_SLEEPENTRY_WFE);
+			Debug_Print("Wake up \r\n");
+			HAL_ResumeTick();
+
+			if (timer_interupt_flag == true){
+				audio_done_flag = false;
+				HAL_ADC_Start_DMA(&hadc, &adc_buffer, BURST_SIZE_ADC);
+				HAL_TIM_Base_Stop_IT(&htim21);
+				sprintf(audio_filename, "Auido%u.wav", capture_index);
+				SD_Card_Open(audio_filename);
+				capture_index++;
+			}
+		}
+		//Debug_Print("Awake \r\n");
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -444,7 +521,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -518,7 +595,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 123;
+  htim2.Init.Period = 199;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -539,6 +616,51 @@ static void MX_TIM2_Init(void)
   /* USER CODE BEGIN TIM2_Init 2 */
 
   /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
+  * @brief TIM21 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM21_Init(void)
+{
+
+  /* USER CODE BEGIN TIM21_Init 0 */
+
+  /* USER CODE END TIM21_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM21_Init 1 */
+
+  /* USER CODE END TIM21_Init 1 */
+  htim21.Instance = TIM21;
+  htim21.Init.Prescaler = 1831;
+  htim21.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim21.Init.Period = 65501;
+  htim21.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim21.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim21) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim21, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim21, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM21_Init 2 */
+
+  /* USER CODE END TIM21_Init 2 */
 
 }
 
@@ -639,6 +761,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
+
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
 }
@@ -661,6 +787,7 @@ void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
 void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
 
 }
+
 /* USER CODE END 4 */
 
 /**
