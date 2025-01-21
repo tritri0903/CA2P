@@ -1,0 +1,1815 @@
+!SESSION 2025-01-10 10:54:46.345 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Tristan\Documents\Github\CA2P
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-10 10:54:52.572
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-10 10:54:52.579
+!MESSAGE Log4j2 initialized with config file C:\Users\Tristan\Documents\Github\CA2P\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-10 10:54:53.913
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tristan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-10 10:55:00.170
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-10 10:55:18.836
+!MESSAGE Indexed 'Camera_Capture' (35 sources, 174 headers) in 4.35 sec: 14,488 declarations; 68,424 references; 2 unresolved inclusions; 30 syntax errors; 569 unresolved names (0.68%)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-10 11:33:12.064
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2025-01-10 11:33:12.064
+!MESSAGE Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:423)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:516)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:480)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:289)
+	... 3 more
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-10 11:33:29.001
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2025-01-10 11:33:29.001
+!MESSAGE Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:423)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:516)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:480)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:289)
+	... 3 more
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-10 11:33:57.251
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2025-01-10 11:33:57.251
+!MESSAGE Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:423)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:516)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:480)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:289)
+	... 3 more
+!SESSION 2025-01-10 11:34:03.255 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-10 11:34:26.931
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-10 11:34:26.937
+!MESSAGE Log4j2 initialized with config file C:\Users\Tristan\Documents\Github\CA2P\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-10 11:34:32.074
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tristan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-10 11:34:39.655
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-10 11:34:57.903
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2025-01-10 11:34:57.903
+!MESSAGE Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:423)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:516)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:480)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:289)
+	... 3 more
+!SESSION 2025-01-10 11:36:22.171 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-10 11:36:26.936
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-10 11:36:26.937
+!MESSAGE Log4j2 initialized with config file C:\Users\Tristan\Documents\Github\CA2P\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-10 11:36:30.072
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tristan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-10 11:36:37.559
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-10 11:37:13.156
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2025-01-10 11:37:13.156
+!MESSAGE Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:423)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:516)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:480)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:289)
+	... 3 more
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-10 11:37:50.707
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2025-01-10 11:37:50.707
+!MESSAGE Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:423)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+Camera_Capture/Core/Src/main.c
+Camera_Capture/Debug/Camera_Capture.elf
+Camera_Capture/Debug/Camera_Capture.list
+Camera_Capture/Debug/Camera_Capture.map
+Camera_Capture/Debug/Core/Src/main.cyclo
+Camera_Capture/Debug/Core/Src/main.d
+Camera_Capture/Debug/Core/Src/main.o
+Camera_Capture/Debug/Core/Src/main.su
+Camera_Capture/Debug/Core/Src/stm32l0xx_hal_msp.o
+Camera_Capture/Debug/Core/Src/stm32l0xx_it.o
+Camera_Capture/Debug/Core/Src/system_stm32l0xx.o
+Camera_Capture/Debug/Drivers/ArduCAM/ArduCAM.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+Camera_Capture/Debug/Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
+Camera_Capture/Drivers/SD_CARD/sd_card.c
+Camera_Capture/Drivers/SD_CARD/sd_card.h
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:516)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:480)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:289)
+	... 3 more
+!SESSION 2025-01-10 11:38:57.219 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-10 11:39:03.656
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-10 11:39:03.657
+!MESSAGE Log4j2 initialized with config file C:\Users\Tristan\Documents\Github\CA2P\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-10 11:39:08.462
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tristan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-10 11:39:14.929
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.jface 2 0 2025-01-10 12:18:12.548
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-10 12:18:12.548
+!MESSAGE A conflict occurred for CTRL+INSERT:
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(AnsiConsole.command.copy_without_escapes,Copy Text Without ANSI Escapes,
+		Copy the console content to clipboard, removing the escape sequences,
+		Category(AnsiConsole.command.categoryid,ANSI Support Commands,null,true),
+		WorkbenchHandlerServiceHandler("AnsiConsole.command.copy_without_escapes"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.console.ConsoleView,,,system)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-10 12:19:10.314
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-10 12:19:20.050
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-10 12:19:27.549
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-10 12:19:45.585
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:13:07.582
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:14:15.673
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:15:13.280
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:15:16.218
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:15:18.194
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:15:27.664
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:15:29.580
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:15:50.461
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:16:11.295
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:16:13.202
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-01-13 15:16:26.629 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-13 15:16:52.322
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-13 15:16:52.328
+!MESSAGE Log4j2 initialized with config file C:\Users\Tristan\Documents\Github\CA2P\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-13 15:16:56.053
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tristan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-13 15:17:03.421
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.jface 2 0 2025-01-13 15:17:08.544
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-13 15:17:08.544
+!MESSAGE A conflict occurred for CTRL+INSERT:
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(AnsiConsole.command.copy_without_escapes,Copy Text Without ANSI Escapes,
+		Copy the console content to clipboard, removing the escape sequences,
+		Category(AnsiConsole.command.categoryid,ANSI Support Commands,null,true),
+		WorkbenchHandlerServiceHandler("AnsiConsole.command.copy_without_escapes"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.console.ConsoleView,,,system)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:17:08.593
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:17:13.025
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:17:15.571
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:17:18.148
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 15:31:56.911
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 17:33:59.701
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 17:34:02.278
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 17:34:19.986
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 17:34:52.089
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-13 17:34:54.839
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 12:40:57.102
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 39 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 12:40:57.103
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 12:40:57.106
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 39 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 12:40:57.107
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-01-14 12:40:59.018
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.internal.ui.actions.DsfTerminateCommand$3$1@42f500cd): Status OK: unknown code=0 OK' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-14 15:44:41.529
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 16:31:29.607
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 16:31:29.607
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 16:31:29.608
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-14 16:31:29.608
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 4 0 2025-01-15 01:29:17.303
+!MESSAGE Failed to parse wmic output
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:262)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at com.st.stm32cube.ide.mpu.remote.serial.internal.SerialPortProviderWindows.run(SerialPortProviderWindows.java:127)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 4 0 2025-01-15 01:29:18.212
+!MESSAGE Failed to parse wmic output
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:262)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at com.st.stm32cube.ide.mpu.remote.serial.internal.SerialPortProviderWindows.run(SerialPortProviderWindows.java:127)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 4 0 2025-01-15 01:29:19.206
+!MESSAGE Failed to parse wmic output
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:262)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at com.st.stm32cube.ide.mpu.remote.serial.internal.SerialPortProviderWindows.run(SerialPortProviderWindows.java:127)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 4 0 2025-01-15 01:29:20.206
+!MESSAGE Failed to parse wmic output
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:262)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at com.st.stm32cube.ide.mpu.remote.serial.internal.SerialPortProviderWindows.run(SerialPortProviderWindows.java:127)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY org.eclipse.ui 4 0 2025-01-15 01:29:20.448
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4899)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.graphics.GC.setFont(GC.java:4385)
+	at org.eclipse.swt.custom.CTabFolderRenderer.computeSize(CTabFolderRenderer.java:351)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.computeSize(CTabRendering.java:221)
+	at org.eclipse.swt.custom.CTabFolder.setItemSize(CTabFolder.java:2905)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3870)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3803)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2128)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:339)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.sendResize(Control.java:3049)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1018)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1067)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3218)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3214)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3290)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3286)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:315)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:260)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:178)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1335)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1022)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1067)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3218)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3214)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3209)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:216)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1335)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1736)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4821)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5676)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4834)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3257)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1061)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3218)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3214)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3290)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3286)
+	at org.eclipse.swt.custom.StackLayout.layout(StackLayout.java:124)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1335)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1736)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4821)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5676)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4834)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3257)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1061)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3218)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3214)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3290)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3286)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:315)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:260)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:178)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1335)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1736)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4821)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5676)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4834)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3257)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1061)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3218)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3214)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3209)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:216)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1335)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1736)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4821)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5676)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4834)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:993)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:970)
+	at org.eclipse.swt.widgets.Composite.setResizeChildren(Composite.java:1166)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1740)
+	at org.eclipse.swt.widgets.Canvas.WM_SIZE(Canvas.java:444)
+	at org.eclipse.swt.widgets.Decorations.WM_SIZE(Decorations.java:1644)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4821)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5676)
+	at org.eclipse.swt.widgets.Canvas.WM_WINDOWPOSCHANGED(Canvas.java:451)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4834)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.SetMenu(Native Method)
+	at org.eclipse.swt.widgets.Decorations.setMenuBar(Decorations.java:1037)
+	at org.eclipse.swt.widgets.Menu.releaseParent(Menu.java:959)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:829)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:183)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:938)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$0(WorkbenchWindow.java:329)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:267)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:158)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.lambda$0(SWTPartRenderer.java:147)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:814)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3716)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3265)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:609)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:224)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$0(IDEWorkbenchAdvisor.java:161)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4266)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3271)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2025-01-15 01:29:20.510
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4899)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.graphics.GC.setFont(GC.java:4385)
+	at org.eclipse.swt.custom.CTabFolderRenderer.computeSize(CTabFolderRenderer.java:351)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.computeSize(CTabRendering.java:221)
+	at org.eclipse.swt.custom.CTabFolder.setItemSize(CTabFolder.java:2905)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3870)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3803)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2128)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:339)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_SIZE(Control.java:5446)
+	at org.eclipse.swt.widgets.Scrollable.WM_SIZE(Scrollable.java:360)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1725)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4821)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5676)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4834)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3257)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1061)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3218)
+	at org.eclipse.swt.widgets.Control.setSizeInPixels(Control.java:3758)
+	at org.eclipse.swt.widgets.Control.setSize(Control.java:3788)
+	at org.eclipse.swt.widgets.Control.pack(Control.java:2197)
+	at org.eclipse.swt.widgets.Control.pack(Control.java:2167)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.adjustTopRight(StackRenderer.java:902)
+	at org.eclipse.ui.internal.e4.compatibility.ActionBars.forceUpdateTopRight(ActionBars.java:105)
+	at org.eclipse.ui.internal.e4.compatibility.ActionBars.updateActionBars(ActionBars.java:85)
+	at org.eclipse.ui.SubActionBars.updateActionBars(SubActionBars.java:602)
+	at org.eclipse.ui.SubActionBars.dispose(SubActionBars.java:262)
+	at org.eclipse.ui.part.PageBookView.removePage(PageBookView.java:814)
+	at org.eclipse.ui.part.PageBookView.partClosed(PageBookView.java:743)
+	at org.eclipse.ui.views.properties.PropertySheet.partClosed(PropertySheet.java:418)
+	at org.eclipse.ui.part.PageBookView$1.partClosed(PageBookView.java:1016)
+	at org.eclipse.ui.internal.WorkbenchPage$13.run(WorkbenchPage.java:5072)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartClosed(WorkbenchPage.java:5069)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.lambda$0(CompatibilityPart.java:112)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:267)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:158)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.lambda$0(SWTPartRenderer.java:147)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:814)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:168)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:711)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1376)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3716)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3265)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:609)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:224)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$0(IDEWorkbenchAdvisor.java:161)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4266)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3271)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SESSION 2025-01-15 12:17:01.433 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-01-15 12:17:06.341
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-15 12:17:17.683
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-15 12:17:17.683
+!MESSAGE Log4j2 initialized with config file C:\Users\Tristan\Documents\Github\CA2P\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-15 12:17:20.782
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tristan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-15 12:17:28.011
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.jface 2 0 2025-01-15 15:25:40.344
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-15 15:25:40.344
+!MESSAGE A conflict occurred for CTRL+INSERT:
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(AnsiConsole.command.copy_without_escapes,Copy Text Without ANSI Escapes,
+		Copy the console content to clipboard, removing the escape sequences,
+		Category(AnsiConsole.command.categoryid,ANSI Support Commands,null,true),
+		WorkbenchHandlerServiceHandler("AnsiConsole.command.copy_without_escapes"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.console.ConsoleView,,,system)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-01-15 17:15:17.160
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.actions.DsfSuspendCommand$4$1@3c6c5c22): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2025-01-15 17:15:17.160
+!MESSAGE Suspend operation timeout.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:08:28.363
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 50 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:08:28.364
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:08:28.364
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 50 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:08:28.365
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-16 14:09:27.377
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-01-16 14:39:41.070
+!MESSAGE Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+!STACK 0
+java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+	at java.base/java.io.FileInputStream.readBytes(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:276)
+	at org.eclipse.jgit.util.io.AutoLFInputStream.fillBuffer(AutoLFInputStream.java:251)
+	at org.eclipse.jgit.util.io.AutoLFInputStream.read(AutoLFInputStream.java:207)
+	at java.base/java.io.InputStream.readNBytes(InputStream.java:506)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:212)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:117)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:92)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:226)
+	at org.eclipse.egit.ui.internal.staging.StagingView$58.run(StagingView.java:3872)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:58:34.288
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:58:34.290
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:58:34.292
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 14:58:34.292
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-16 14:59:24.574
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 15:00:07.971
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 54 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 15:00:07.971
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 15:00:07.972
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 54 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-01-16 15:00:07.972
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-16 15:02:25.090
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-01-16 15:03:11.220 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-16 16:07:06.190
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-16 16:07:06.197
+!MESSAGE Log4j2 initialized with config file C:\Users\Tristan\Documents\Github\CA2P\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-16 16:07:11.743
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tristan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-16 16:07:18.536
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.jface 2 0 2025-01-16 16:11:42.242
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-01-16 16:11:42.242
+!MESSAGE A conflict occurred for CTRL+INSERT:
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.copy"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(AnsiConsole.command.copy_without_escapes,Copy Text Without ANSI Escapes,
+		Copy the console content to clipboard, removing the escape sequences,
+		Category(AnsiConsole.command.categoryid,ANSI Support Commands,null,true),
+		WorkbenchHandlerServiceHandler("AnsiConsole.command.copy_without_escapes"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.console.ConsoleView,,,system)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-16 16:11:42.300
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-16 16:11:42.335
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2025-01-16 16:11:48.484
+!MESSAGE Error opening \\.\COM8 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM8 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

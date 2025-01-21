@@ -1,0 +1,158 @@
+12:13:44 **** Incremental Build of configuration Debug for project Camera_Capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/ArduCAM -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -I"C:/Users/Tristan/Documents/Github/CA2P/Camera_Capture/Drivers/SD_CARD" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Capture_SD':
+../Core/Src/main.c:143:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  143 |         sprintf(filename, "Image%u.jpg", capture_index);
+      |         ^~~~~~~
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "sd_card.h"
+  +++ |+#include <stdio.h>
+   27 | /* USER CODE END Includes */
+../Core/Src/main.c:143:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  143 |         sprintf(filename, "Image%u.jpg", capture_index);
+      |         ^~~~~~~
+../Core/Src/main.c:143:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:185:44: warning: passing argument 1 of 'SD_Card_Write' from incompatible pointer type [-Wincompatible-pointer-types]
+  185 |                 uint8_t BW = SD_Card_Write(&SD_Buffer, BURST_SIZE);
+      |                                            ^~~~~~~~~~
+      |                                            |
+      |                                            uint8_t (*)[512] {aka unsigned char (*)[512]}
+In file included from ../Core/Src/main.c:26:
+C:/Users/Tristan/Documents/Github/CA2P/Camera_Capture/Drivers/SD_CARD/sd_card.h:16:28: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[512]' {aka 'unsigned char (*)[512]'}
+   16 | int SD_Card_Write(uint8_t *buf, uint16_t len);
+      |                   ~~~~~~~~~^~~
+../Core/Src/main.c:185:25: warning: unused variable 'BW' [-Wunused-variable]
+  185 |                 uint8_t BW = SD_Card_Write(&SD_Buffer, BURST_SIZE);
+      |                         ^~
+../Core/Src/main.c:166:26: warning: unused variable 'i' [-Wunused-variable]
+  166 |                 uint16_t i;
+      |                          ^
+../Core/Src/main.c: In function 'Save_Audio':
+../Core/Src/main.c:216:31: warning: passing argument 1 of 'SD_Card_Write' from incompatible pointer type [-Wincompatible-pointer-types]
+  216 |                 SD_Card_Write(&header, 44);
+      |                               ^~~~~~~
+      |                               |
+      |                               uint8_t (*)[44] {aka unsigned char (*)[44]}
+In file included from ../Core/Src/main.c:26:
+C:/Users/Tristan/Documents/Github/CA2P/Camera_Capture/Drivers/SD_CARD/sd_card.h:16:28: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[44]' {aka 'unsigned char (*)[44]'}
+   16 | int SD_Card_Write(uint8_t *buf, uint16_t len);
+      |                   ~~~~~~~~~^~~
+../Core/Src/main.c:219:29: warning: passing argument 1 of 'Corriger_Offset_ADC' from incompatible pointer type [-Wincompatible-pointer-types]
+  219 |         Corriger_Offset_ADC(&adc_buffer, &adc_buffer_offset, BURST_SIZE_ADC);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             uint8_t (*)[512] {aka unsigned char (*)[512]}
+../Core/Src/main.c:193:35: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[512]' {aka 'unsigned char (*)[512]'}
+  193 | void Corriger_Offset_ADC(uint8_t *input_data, int8_t *output_data, uint16_t length) {
+      |                          ~~~~~~~~~^~~~~~~~~~
+../Core/Src/main.c:219:42: warning: passing argument 2 of 'Corriger_Offset_ADC' from incompatible pointer type [-Wincompatible-pointer-types]
+  219 |         Corriger_Offset_ADC(&adc_buffer, &adc_buffer_offset, BURST_SIZE_ADC);
+      |                                          ^~~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          int8_t (*)[512] {aka signed char (*)[512]}
+../Core/Src/main.c:193:55: note: expected 'int8_t *' {aka 'signed char *'} but argument is of type 'int8_t (*)[512]' {aka 'signed char (*)[512]'}
+  193 | void Corriger_Offset_ADC(uint8_t *input_data, int8_t *output_data, uint16_t length) {
+      |                                               ~~~~~~~~^~~~~~~~~~~
+../Core/Src/main.c:220:23: warning: passing argument 1 of 'SD_Card_Write' from incompatible pointer type [-Wincompatible-pointer-types]
+  220 |         SD_Card_Write(&adc_buffer_offset, BURST_SIZE_ADC);
+      |                       ^~~~~~~~~~~~~~~~~~
+      |                       |
+      |                       int8_t (*)[512] {aka signed char (*)[512]}
+In file included from ../Core/Src/main.c:26:
+C:/Users/Tristan/Documents/Github/CA2P/Camera_Capture/Drivers/SD_CARD/sd_card.h:16:28: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int8_t (*)[512]' {aka 'signed char (*)[512]'}
+   16 | int SD_Card_Write(uint8_t *buf, uint16_t len);
+      |                   ~~~~~~~~~^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:286:34: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  286 |         HAL_ADC_Start_DMA(&hadc, &adc_buffer, BURST_SIZE_ADC);
+      |                                  ^~~~~~~~~~~
+      |                                  |
+      |                                  uint8_t (*)[512] {aka unsigned char (*)[512]}
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:208,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_adc.h:1134:75: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint8_t (*)[512]' {aka 'unsigned char (*)[512]'}
+ 1134 | HAL_StatusTypeDef    HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                                                 ~~~~~~~~~~^~~~~
+../Core/Src/main.c:298:25: warning: implicit declaration of function 'set_power_up' [-Wimplicit-function-declaration]
+  298 |                         set_power_up();
+      |                         ^~~~~~~~~~~~
+../Core/Src/main.c:306:33: warning: implicit declaration of function 'set_power_down' [-Wimplicit-function-declaration]
+  306 |                                 set_power_down();
+      |                                 ^~~~~~~~~~~~~~
+../Core/Src/main.c:312:56: warning: passing argument 2 of 'Save_Audio' makes integer from pointer without a cast [-Wint-conversion]
+  312 |                                 Save_Audio(audio_size, adc_buffer);
+      |                                                        ^~~~~~~~~~
+      |                                                        |
+      |                                                        uint8_t * {aka unsigned char *}
+../Core/Src/main.c:209:39: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  209 | void Save_Audio(uint8_t len, uint16_t buf){
+      |                              ~~~~~~~~~^~~
+../Core/Src/main.c:320:56: warning: passing argument 2 of 'Save_Audio' makes integer from pointer without a cast [-Wint-conversion]
+  320 |                                 Save_Audio(audio_size, adc_buffer);
+      |                                                        ^~~~~~~~~~
+      |                                                        |
+      |                                                        uint8_t * {aka unsigned char *}
+../Core/Src/main.c:209:39: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  209 | void Save_Audio(uint8_t len, uint16_t buf){
+      |                              ~~~~~~~~~^~~
+../Core/Src/main.c:339:58: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  339 |                                 HAL_ADC_Start_DMA(&hadc, &adc_buffer, BURST_SIZE_ADC);
+      |                                                          ^~~~~~~~~~~
+      |                                                          |
+      |                                                          uint8_t (*)[512] {aka unsigned char (*)[512]}
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:208,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_adc.h:1134:75: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint8_t (*)[512]' {aka 'unsigned char (*)[512]'}
+ 1134 | HAL_StatusTypeDef    HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                                                 ~~~~~~~~~~^~~~~
+../Core/Src/main.c:341:33: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  341 |                                 sprintf(audio_filename, "Audio%u.wav", capture_index);
+      |                                 ^~~~~~~
+../Core/Src/main.c:341:33: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'Debug_Print':
+../Core/Src/main.c:781:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  781 |         sprintf(TxBuffer, message);
+      |         ^~~~~~~
+../Core/Src/main.c:781:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:781:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  781 |         sprintf(TxBuffer, message);
+      |                 ^~~~~~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+../Core/Src/main.c:781:17: note: expected 'char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:782:57: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  782 |         HAL_UART_Transmit(&huart2, (uint8_t*) TxBuffer, strlen(TxBuffer),
+      |                                                         ^~~~~~
+../Core/Src/main.c:27:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   26 | #include "sd_card.h"
+  +++ |+#include <string.h>
+   27 | /* USER CODE END Includes */
+../Core/Src/main.c:782:57: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  782 |         HAL_UART_Transmit(&huart2, (uint8_t*) TxBuffer, strlen(TxBuffer),
+      |                                                         ^~~~~~
+../Core/Src/main.c:782:57: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:782:64: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  782 |         HAL_UART_Transmit(&huart2, (uint8_t*) TxBuffer, strlen(TxBuffer),
+      |                                                                ^~~~~~~~
+      |                                                                |
+      |                                                                uint8_t * {aka unsigned char *}
+../Core/Src/main.c:782:64: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+arm-none-eabi-g++ -o "Camera_Capture.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Camera_Capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Camera_Capture.elf
+ 
+arm-none-eabi-size  Camera_Capture.elf 
+arm-none-eabi-objdump -h -S Camera_Capture.elf  > "Camera_Capture.list"
+   text	   data	    bss	    dec	    hex	filename
+  51636	    128	   5488	  57252	   dfa4	Camera_Capture.elf
+Finished building: default.size.stdout
+ 
+Finished building: Camera_Capture.list
+ 
+
+12:13:46 Build Finished. 0 errors, 21 warnings. (took 2s.586ms)
+

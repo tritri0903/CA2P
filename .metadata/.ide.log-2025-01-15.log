@@ -1,0 +1,1305 @@
+2025-01-16 09:29:35,632 [INFO] I2cTimingTraitement:330 - 0x00000509
+2025-01-16 09:29:35,712 [INFO] Gpio:277 - dependency for GPIO [ADC, I2C1, RCC, SPI1, SPI2, SYS, USART2]
+2025-01-16 09:29:35,755 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:29:54,896 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:29:54,964 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:29:58,085 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 916455648 Bytes (1073741824)
+2025-01-16 09:29:58,786 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 939907888 Bytes (1073741824)
+2025-01-16 09:29:58,984 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 715491976 Bytes (1073741824)
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-01-16 09:30:00,039 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2025-01-16 09:30:00,040 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2025-01-16 09:30:00,042 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:30:00,042 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:30:00,042 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:30:00,042 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:30:00,042 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:30:00,043 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:30:00,052 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:30:00,053 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:30:00,128 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp_save
+2025-01-16 09:30:00,209 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp
+2025-01-16 09:30:00,263 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp_save
+2025-01-16 09:30:00,353 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp
+2025-01-16 09:30:00,752 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:30:00,757 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:30:00,848 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:30:00,850 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:30:00,886 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:30:00,889 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:30:00,927 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:30:00,930 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:30:00,976 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:30:01,001 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp_save
+2025-01-16 09:30:01,053 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp
+2025-01-16 09:30:01,055 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp_save
+2025-01-16 09:30:01,093 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp
+2025-01-16 09:30:01,095 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:30:01,100 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:30:01,145 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:30:01,149 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:30:01,183 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:30:01,186 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:30:01,224 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:30:01,227 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:30:01,260 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:30:01,274 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h_save
+2025-01-16 09:30:01,360 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h
+2025-01-16 09:30:01,382 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c_save
+2025-01-16 09:30:01,445 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c
+2025-01-16 09:30:01,455 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h_save
+2025-01-16 09:30:01,514 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h
+2025-01-16 09:30:01,523 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c_save
+2025-01-16 09:30:01,583 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c
+2025-01-16 09:30:01,593 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h_save
+2025-01-16 09:30:01,651 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h
+2025-01-16 09:30:01,669 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c_save
+2025-01-16 09:30:01,795 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c
+2025-01-16 09:30:01,800 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h_save
+2025-01-16 09:30:01,856 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h
+2025-01-16 09:30:01,872 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c_save
+2025-01-16 09:30:01,983 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c
+2025-01-16 09:30:01,995 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp_save
+2025-01-16 09:30:02,040 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp
+2025-01-16 09:30:02,053 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-01-16 09:30:02,130 [INFO] CodeEngine:335 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h
+2025-01-16 09:30:02,150 [WARN] IPConfigManager:3440 - IP not found : TIM
+2025-01-16 09:30:02,151 [WARN] CodeGenerator:3939 - IP not found : null
+2025-01-16 09:30:02,169 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h_save
+2025-01-16 09:30:02,244 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h
+2025-01-16 09:30:02,255 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c_save
+2025-01-16 09:30:02,356 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c
+2025-01-16 09:30:02,729 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 146mS.
+2025-01-16 09:30:02,734 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2025-01-16 09:30:02,890 [INFO] ConfigFileManager:1495 - The Die is : DIE417
+2025-01-16 09:30:03,817 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1083mS.
+2025-01-16 09:30:03,817 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 09:30:03,821 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 09:37:11,140 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:37:11,212 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:37:13,941 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 749709880 Bytes (1073741824)
+2025-01-16 09:37:15,619 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 772256312 Bytes (1073741824)
+2025-01-16 09:37:15,800 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 735289064 Bytes (1073741824)
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:37:16,325 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-01-16 09:37:16,326 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-01-16 09:37:16,326 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-01-16 09:37:16,326 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:37:16,326 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-01-16 09:37:16,326 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2025-01-16 09:37:16,326 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:37:16,327 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:37:16,329 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:37:16,329 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:37:16,337 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:37:16,337 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:37:16,337 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:37:16,337 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:37:16,339 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:37:16,407 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp_save
+2025-01-16 09:37:16,455 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp
+2025-01-16 09:37:16,498 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp_save
+2025-01-16 09:37:16,561 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp
+2025-01-16 09:37:16,945 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:37:16,950 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:37:17,009 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:37:17,012 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:37:17,060 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:37:17,062 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:37:17,102 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:37:17,105 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:37:17,139 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:37:17,163 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp_save
+2025-01-16 09:37:17,211 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp
+2025-01-16 09:37:17,213 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp_save
+2025-01-16 09:37:17,246 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp
+2025-01-16 09:37:17,248 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:37:17,253 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:37:17,300 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:37:17,304 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:37:17,338 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:37:17,341 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:37:17,376 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:37:17,380 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:37:17,417 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:37:17,430 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h_save
+2025-01-16 09:37:17,516 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h
+2025-01-16 09:37:17,530 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c_save
+2025-01-16 09:37:17,578 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c
+2025-01-16 09:37:17,582 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h_save
+2025-01-16 09:37:17,638 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h
+2025-01-16 09:37:17,647 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c_save
+2025-01-16 09:37:17,691 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c
+2025-01-16 09:37:17,693 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h_save
+2025-01-16 09:37:17,732 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h
+2025-01-16 09:37:17,748 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c_save
+2025-01-16 09:37:17,837 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c
+2025-01-16 09:37:17,839 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h_save
+2025-01-16 09:37:17,884 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h
+2025-01-16 09:37:17,898 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c_save
+2025-01-16 09:37:17,991 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c
+2025-01-16 09:37:18,002 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp_save
+2025-01-16 09:37:18,037 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp
+2025-01-16 09:37:18,049 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-01-16 09:37:18,111 [INFO] CodeEngine:335 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h
+2025-01-16 09:37:18,129 [WARN] IPConfigManager:3440 - IP not found : TIM
+2025-01-16 09:37:18,129 [WARN] CodeGenerator:3939 - IP not found : null
+2025-01-16 09:37:18,140 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h_save
+2025-01-16 09:37:18,191 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h
+2025-01-16 09:37:18,202 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c_save
+2025-01-16 09:37:18,314 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c
+2025-01-16 09:37:18,683 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 107mS.
+2025-01-16 09:37:18,686 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2025-01-16 09:37:18,808 [INFO] ConfigFileManager:1495 - The Die is : DIE417
+2025-01-16 09:37:19,838 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1152mS.
+2025-01-16 09:37:19,839 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 09:37:19,840 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 09:38:28,758 [INFO] I2cTimingTraitement:330 - 0x00000509
+2025-01-16 09:44:24,806 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,502x330,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:44:37,172 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:44:37,232 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:44:39,546 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:44:39,606 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:44:52,608 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:44:52,662 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:44:53,910 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 869299952 Bytes (1073741824)
+2025-01-16 09:44:55,503 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 892867328 Bytes (1073741824)
+2025-01-16 09:44:55,687 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 692398688 Bytes (1073741824)
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-01-16 09:44:56,805 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2025-01-16 09:44:56,806 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:44:56,807 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:44:56,816 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:44:56,816 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:44:56,816 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:44:56,818 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:44:56,917 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp_save
+2025-01-16 09:44:56,982 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp
+2025-01-16 09:44:57,031 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp_save
+2025-01-16 09:44:57,088 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp
+2025-01-16 09:44:57,507 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:44:57,516 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:44:57,570 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:44:57,577 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:44:57,620 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:44:57,627 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:44:57,674 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:44:57,684 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:44:57,727 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:44:57,759 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp_save
+2025-01-16 09:44:57,816 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp
+2025-01-16 09:44:57,822 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp_save
+2025-01-16 09:44:57,859 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp
+2025-01-16 09:44:57,860 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:44:57,866 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:44:57,911 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:44:57,914 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:44:57,950 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:44:57,953 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:44:57,987 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:44:57,990 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:44:58,023 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:44:58,043 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h_save
+2025-01-16 09:44:58,139 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h
+2025-01-16 09:44:58,168 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c_save
+2025-01-16 09:44:58,234 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c
+2025-01-16 09:44:58,249 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h_save
+2025-01-16 09:44:58,311 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h
+2025-01-16 09:44:58,326 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c_save
+2025-01-16 09:44:58,393 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c
+2025-01-16 09:44:58,406 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h_save
+2025-01-16 09:44:58,472 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h
+2025-01-16 09:44:58,496 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c_save
+2025-01-16 09:44:58,623 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c
+2025-01-16 09:44:58,638 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h_save
+2025-01-16 09:44:58,703 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h
+2025-01-16 09:44:58,724 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c_save
+2025-01-16 09:44:58,849 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c
+2025-01-16 09:44:58,864 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp_save
+2025-01-16 09:44:58,907 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp
+2025-01-16 09:44:58,927 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-01-16 09:44:58,997 [INFO] CodeEngine:335 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h
+2025-01-16 09:44:59,014 [WARN] IPConfigManager:3440 - IP not found : TIM
+2025-01-16 09:44:59,015 [WARN] CodeGenerator:3939 - IP not found : null
+2025-01-16 09:44:59,033 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h_save
+2025-01-16 09:44:59,103 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h
+2025-01-16 09:44:59,121 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c_save
+2025-01-16 09:44:59,227 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c
+2025-01-16 09:44:59,574 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 118mS.
+2025-01-16 09:44:59,577 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2025-01-16 09:44:59,728 [INFO] ConfigFileManager:1495 - The Die is : DIE417
+2025-01-16 09:45:01,323 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1746mS.
+2025-01-16 09:45:01,323 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 09:45:01,326 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 09:56:41,696 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:56:41,751 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:56:46,219 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:56:46,282 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:56:49,339 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:56:49,390 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:57:24,080 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:57:24,136 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-16 09:57:25,457 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 794009840 Bytes (1073741824)
+2025-01-16 09:57:26,133 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 818649328 Bytes (1073741824)
+2025-01-16 09:57:26,311 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 866883824 Bytes (1073741824)
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-01-16 09:57:27,408 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2025-01-16 09:57:27,409 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:57:27,410 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 09:57:27,419 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 09:57:27,419 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 09:57:27,420 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 09:57:27,484 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp_save
+2025-01-16 09:57:27,550 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp
+2025-01-16 09:57:27,587 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp_save
+2025-01-16 09:57:27,643 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp
+2025-01-16 09:57:28,012 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:57:28,015 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:57:28,070 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:57:28,071 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:57:28,110 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:57:28,112 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:57:28,145 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:57:28,148 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:57:28,180 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:57:28,211 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp_save
+2025-01-16 09:57:28,265 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp
+2025-01-16 09:57:28,267 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp_save
+2025-01-16 09:57:28,300 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp
+2025-01-16 09:57:28,301 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 09:57:28,306 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 09:57:28,355 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 09:57:28,358 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 09:57:28,392 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 09:57:28,396 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 09:57:28,428 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 09:57:28,432 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 09:57:28,467 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 09:57:28,478 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h_save
+2025-01-16 09:57:28,567 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h
+2025-01-16 09:57:28,581 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c_save
+2025-01-16 09:57:28,633 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c
+2025-01-16 09:57:28,636 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h_save
+2025-01-16 09:57:28,687 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h
+2025-01-16 09:57:28,691 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c_save
+2025-01-16 09:57:28,729 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c
+2025-01-16 09:57:28,733 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h_save
+2025-01-16 09:57:28,776 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h
+2025-01-16 09:57:28,793 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c_save
+2025-01-16 09:57:28,899 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c
+2025-01-16 09:57:28,909 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h_save
+2025-01-16 09:57:28,953 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h
+2025-01-16 09:57:28,973 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c_save
+2025-01-16 09:57:29,079 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c
+2025-01-16 09:57:29,090 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp_save
+2025-01-16 09:57:29,138 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp
+2025-01-16 09:57:29,154 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-01-16 09:57:29,220 [INFO] CodeEngine:335 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h
+2025-01-16 09:57:29,237 [WARN] IPConfigManager:3440 - IP not found : TIM
+2025-01-16 09:57:29,237 [WARN] CodeGenerator:3939 - IP not found : null
+2025-01-16 09:57:29,250 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h_save
+2025-01-16 09:57:29,303 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h
+2025-01-16 09:57:29,314 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c_save
+2025-01-16 09:57:29,411 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c
+2025-01-16 09:57:29,758 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 124mS.
+2025-01-16 09:57:29,761 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2025-01-16 09:57:29,909 [INFO] ConfigFileManager:1495 - The Die is : DIE417
+2025-01-16 09:57:30,895 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1134mS.
+2025-01-16 09:57:30,896 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2025-01-16 09:57:30,899 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 10:32:10,995 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 890271024 Bytes (1073741824)
+2025-01-16 10:32:11,986 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 912882312 Bytes (1073741824)
+2025-01-16 10:32:12,177 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 729762648 Bytes (1073741824)
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-01-16 10:32:13,241 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2025-01-16 10:32:13,242 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:32:13,243 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:32:13,244 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:32:13,244 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:32:13,252 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:32:13,253 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:32:13,253 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:32:13,253 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:32:13,253 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:32:13,357 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp_save
+2025-01-16 10:32:13,428 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp
+2025-01-16 10:32:13,480 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp_save
+2025-01-16 10:32:13,536 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp
+2025-01-16 10:32:13,973 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 10:32:13,982 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 10:32:14,037 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 10:32:14,044 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 10:32:14,088 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 10:32:14,095 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 10:32:14,139 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 10:32:14,148 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 10:32:14,198 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 10:32:14,228 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp_save
+2025-01-16 10:32:14,281 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp
+2025-01-16 10:32:14,290 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp_save
+2025-01-16 10:32:14,326 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp
+2025-01-16 10:32:14,329 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 10:32:14,334 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 10:32:14,379 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 10:32:14,383 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 10:32:14,416 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 10:32:14,419 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 10:32:14,453 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 10:32:14,456 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 10:32:14,492 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 10:32:14,513 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h_save
+2025-01-16 10:32:14,596 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h
+2025-01-16 10:32:14,624 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c_save
+2025-01-16 10:32:14,683 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c
+2025-01-16 10:32:14,699 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h_save
+2025-01-16 10:32:14,763 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h
+2025-01-16 10:32:14,777 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c_save
+2025-01-16 10:32:14,838 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c
+2025-01-16 10:32:14,853 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h_save
+2025-01-16 10:32:14,914 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h
+2025-01-16 10:32:14,939 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c_save
+2025-01-16 10:32:15,051 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c
+2025-01-16 10:32:15,066 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h_save
+2025-01-16 10:32:15,129 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h
+2025-01-16 10:32:15,153 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c_save
+2025-01-16 10:32:15,251 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c
+2025-01-16 10:32:15,267 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp_save
+2025-01-16 10:32:15,314 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp
+2025-01-16 10:32:15,333 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-01-16 10:32:15,398 [INFO] CodeEngine:335 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h
+2025-01-16 10:32:15,416 [WARN] IPConfigManager:3440 - IP not found : TIM
+2025-01-16 10:32:15,416 [WARN] CodeGenerator:3939 - IP not found : null
+2025-01-16 10:32:15,438 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h_save
+2025-01-16 10:32:15,524 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h
+2025-01-16 10:32:15,542 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c_save
+2025-01-16 10:32:15,639 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c
+2025-01-16 10:32:16,009 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 145mS.
+2025-01-16 10:32:16,013 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2025-01-16 10:32:16,193 [INFO] ConfigFileManager:1495 - The Die is : DIE417
+2025-01-16 10:32:17,166 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1153mS.
+2025-01-16 10:32:17,167 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2025-01-16 10:32:17,170 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 10:33:15,752 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 771744280 Bytes (1073741824)
+2025-01-16 10:33:16,390 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 795280288 Bytes (1073741824)
+2025-01-16 10:33:16,587 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 819439592 Bytes (1073741824)
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-01-16 10:33:17,814 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2025-01-16 10:33:17,815 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:33:17,816 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 10:33:17,825 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 10:33:17,825 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:33:17,825 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:33:17,826 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:33:17,902 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp_save
+2025-01-16 10:33:17,957 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp
+2025-01-16 10:33:17,988 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp_save
+2025-01-16 10:33:18,058 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp
+2025-01-16 10:33:18,390 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 10:33:18,393 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 10:33:18,444 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 10:33:18,448 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 10:33:18,483 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 10:33:18,485 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 10:33:18,523 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 10:33:18,526 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 10:33:18,573 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 10:33:18,610 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp_save
+2025-01-16 10:33:18,658 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp
+2025-01-16 10:33:18,659 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp_save
+2025-01-16 10:33:18,700 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp
+2025-01-16 10:33:18,702 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 10:33:18,708 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 10:33:18,753 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 10:33:18,756 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 10:33:18,792 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 10:33:18,795 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 10:33:18,828 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 10:33:18,832 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 10:33:18,868 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 10:33:18,880 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h_save
+2025-01-16 10:33:18,966 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h
+2025-01-16 10:33:18,981 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c_save
+2025-01-16 10:33:19,019 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c
+2025-01-16 10:33:19,022 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h_save
+2025-01-16 10:33:19,071 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h
+2025-01-16 10:33:19,074 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c_save
+2025-01-16 10:33:19,114 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c
+2025-01-16 10:33:19,117 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h_save
+2025-01-16 10:33:19,159 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h
+2025-01-16 10:33:19,176 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c_save
+2025-01-16 10:33:19,236 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c
+2025-01-16 10:33:19,246 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h_save
+2025-01-16 10:33:19,284 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h
+2025-01-16 10:33:19,296 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c_save
+2025-01-16 10:33:19,385 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c
+2025-01-16 10:33:19,396 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp_save
+2025-01-16 10:33:19,428 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp
+2025-01-16 10:33:19,441 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-01-16 10:33:19,499 [INFO] CodeEngine:335 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h
+2025-01-16 10:33:19,516 [WARN] IPConfigManager:3440 - IP not found : TIM
+2025-01-16 10:33:19,516 [WARN] CodeGenerator:3939 - IP not found : null
+2025-01-16 10:33:19,528 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h_save
+2025-01-16 10:33:19,571 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h
+2025-01-16 10:33:19,581 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c_save
+2025-01-16 10:33:19,674 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c
+2025-01-16 10:33:19,998 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 119mS.
+2025-01-16 10:33:20,002 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2025-01-16 10:33:20,159 [INFO] ConfigFileManager:1495 - The Die is : DIE417
+2025-01-16 10:33:21,159 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1157mS.
+2025-01-16 10:33:21,159 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 10:33:21,162 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 10:38:23,497 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 845681896 Bytes (1073741824)
+2025-01-16 10:38:23,951 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 866886328 Bytes (1073741824)
+2025-01-16 10:38:24,170 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 892341480 Bytes (1073741824)
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L0
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-01-16 10:38:25,538 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2025-01-16 10:38:25,539 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel1
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_0
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:38:25,541 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:38:25,549 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:38:25,549 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:38:25,549 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel2
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel3
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Initvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:327 - 	 sub Args: 
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_1
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Statevalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Statevalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-01-16 10:38:25,551 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-01-16 10:38:25,625 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp_save
+2025-01-16 10:38:25,682 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\license.tmp
+2025-01-16 10:38:25,727 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp_save
+2025-01-16 10:38:25,791 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\gpio.tmp
+2025-01-16 10:38:26,232 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 10:38:26,236 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 10:38:26,302 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 10:38:26,305 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 10:38:26,345 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 10:38:26,347 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 10:38:26,386 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 10:38:26,391 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 10:38:26,426 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 10:38:26,449 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp_save
+2025-01-16 10:38:26,502 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma.tmp
+2025-01-16 10:38:26,504 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp_save
+2025-01-16 10:38:26,538 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\dma_GV.tmp
+2025-01-16 10:38:26,541 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2025-01-16 10:38:26,545 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-16 10:38:26,594 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-16 10:38:26,598 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-16 10:38:26,636 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_vars.tmp
+2025-01-16 10:38:26,642 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-16 10:38:26,686 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-16 10:38:26,691 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-16 10:38:26,729 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\fatfs_inc.tmp
+2025-01-16 10:38:26,743 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h_save
+2025-01-16 10:38:26,836 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\ffconf.h
+2025-01-16 10:38:26,852 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c_save
+2025-01-16 10:38:26,893 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.c
+2025-01-16 10:38:26,896 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h_save
+2025-01-16 10:38:26,944 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\Target\user_diskio.h
+2025-01-16 10:38:26,947 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c_save
+2025-01-16 10:38:26,987 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.c
+2025-01-16 10:38:26,997 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h_save
+2025-01-16 10:38:27,038 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\FATFS\App\fatfs.h
+2025-01-16 10:38:27,055 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c_save
+2025-01-16 10:38:27,171 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_it.c
+2025-01-16 10:38:27,182 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h_save
+2025-01-16 10:38:27,226 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_it.h
+2025-01-16 10:38:27,246 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c_save
+2025-01-16 10:38:27,380 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\stm32l0xx_hal_msp.c
+2025-01-16 10:38:27,391 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp_save
+2025-01-16 10:38:27,429 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\MXTmpFiles\system.tmp
+2025-01-16 10:38:27,445 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-01-16 10:38:27,514 [INFO] CodeEngine:335 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\stm32l0xx_hal_conf.h
+2025-01-16 10:38:27,533 [WARN] IPConfigManager:3440 - IP not found : TIM
+2025-01-16 10:38:27,533 [WARN] CodeGenerator:3939 - IP not found : null
+2025-01-16 10:38:27,551 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h_save
+2025-01-16 10:38:27,601 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Inc\main.h
+2025-01-16 10:38:27,613 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c_save
+2025-01-16 10:38:27,727 [INFO] CodeEngine:279 - Generated code: C:\Users\Tristan\Documents\Github\CA2P\Camera_Capture\Core\Src\main.c
+2025-01-16 10:38:28,166 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 131mS.
+2025-01-16 10:38:28,171 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2025-01-16 10:38:28,328 [INFO] ConfigFileManager:1495 - The Die is : DIE417
+2025-01-16 10:38:29,462 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1291mS.
+2025-01-16 10:38:29,463 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2025-01-16 10:38:29,464 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2025-01-16 10:47:13,065 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]

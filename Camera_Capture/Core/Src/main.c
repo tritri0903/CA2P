@@ -300,10 +300,12 @@ int main(void)
 			Debug_Print("Capture Start! \r\n");
 			len = SingleCapTransfer();
 			Debug_Print("Capture Done! \r\n");
-			Capture_SD(len);
-			Debug_Print("Capture Save! \r\n");
-			set_power_down();
-			capture_trigger_flag = false;
+			if (audio_done_flag == true){
+				Capture_SD(len);
+				Debug_Print("Capture Save! \r\n");
+				set_power_down();
+				capture_trigger_flag = false;
+			}
 		}
 		if(adc_flag == true && audio_done_flag == false){
 			if(audio_size >= 20 * AUDIO_REC_SEC){
@@ -332,9 +334,11 @@ int main(void)
 
 			if (timer_interupt_flag == true){
 				audio_done_flag = false;
+				audio_header_flag = false;
+				HAL_ADC_Init(&hadc);
 				HAL_ADC_Start_DMA(&hadc, &adc_buffer, BURST_SIZE_ADC);
 				HAL_TIM_Base_Stop_IT(&htim21);
-				sprintf(audio_filename, "Auido%u.wav", capture_index);
+				sprintf(audio_filename, "Audio%u.wav", capture_index);
 				SD_Card_Open(audio_filename);
 				capture_index++;
 			}
