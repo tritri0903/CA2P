@@ -260,6 +260,7 @@ int main(void)
   MX_TIM21_Init();
   /* USER CODE BEGIN 2 */
 	HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_SET);
 	HAL_Delay(100);
 
 	uint8_t SD_Status = 1;
